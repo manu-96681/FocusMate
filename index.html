@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusMate | Anti-Procrastination Study Companion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div>
+                <h1>🧠 FocusMate</h1>
+                <p>Anti-Procrastination Study Companion</p>
+            </div>
+            <span class="header-tag">Build Focus. Beat Distractions.</span>
+        </header>
+
+        <main>
+
+            <!-- Welcome Section -->
+            <section class="greeting">
+                <div>
+                    <h1>Good Morning, Manu! 👋</h1>
+                    <p>
+                        Welcome back! Every small step counts.
+                        Stay focused, complete your goals, and make today productive.
+                    </p>
+                </div>
+                <div class="greeting-icon">🌱</div>
+            </section>
+
+            <!-- Dashboard -->
+            <section class="dashboard">
+
+                <div class="card">
+                    <h3>🎯 Today's Goal</h3>
+                    <p>Complete My Goals</p>
+                </div>
+
+                <div class="card">
+                    <h3>✅ Tasks Completed</h3>
+                    <p id="completedCount">0 / 0</p>
+                </div>
+
+                <div class="card">
+                    <h3>🍅 Focus Time</h3>
+                    <p id="focusTime">25 Minutes</p>
+                </div>
+
+            </section>
+
+            <!-- Tasks Section -->
+            <section class="task-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>📋 Today's Tasks</h2>
+                        <p>Organize your work and finish one task at a time.</p>
+                    </div>
+                </div>
+
+                <div class="task-input">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="What do you need to accomplish today?"
+                        aria-label="Enter a new task"
+                    >
+
+                    <button id="addTaskBtn">+ Add Task</button>
+
+                </div>
+
+                <ul id="taskList"></ul>
+
+            </section>
+
+            <!-- Pomodoro Timer -->
+            <section class="pomodoro">
+
+                <h2>🍅 Pomodoro Focus Timer</h2>
+
+                <p>Work with full concentration. Take breaks to refresh your mind.</p>
+
+                <div class="timer-display" id="timerDisplay">
+                    25:00
+                </div>
+
+                <div class="timer-buttons">
+
+                    <button id="startBtn">▶ Start</button>
+
+                    <button id="pauseBtn">⏸ Pause</button>
+
+                    <button id="resetBtn">↻ Reset</button>
+
+                </div>
+
+                <p id="timerStatus">Ready to focus?</p>
+
+            </section>
+
+            <!-- Habit Tracker -->
+            <section class="habit-section">
+
+                <h2>🔥 Daily Habit Tracker</h2>
+
+                <p>Build small habits that create big results.</p>
+
+                <div class="habit-list" id="habitList">
+
+                    <label class="habit-item">
+                        <input type="checkbox" class="habit-checkbox">
+                        <span>📚 Study for at least 1 hour</span>
+                    </label>
+
+                    <label class="habit-item">
+                        <input type="checkbox" class="habit-checkbox">
+                        <span>💻 Practice coding</span>
+                    </label>
+
+                    <label class="habit-item">
+                        <input type="checkbox" class="habit-checkbox">
+                        <span>💧 Drink enough water</span>
+                    </label>
+
+                    <label class="habit-item">
+                        <input type="checkbox" class="habit-checkbox">
+                        <span>🚶 Exercise or walk</span>
+                    </label>
+
+                    <label class="habit-item">
+                        <input type="checkbox" class="habit-checkbox">
+                        <span>📖 Read something useful</span>
+                    </label>
+
+                </div>
+
+                <p id="habitProgress">0 / 5 habits completed</p>
+
+            </section>
+
+            <!-- Notes Section -->
+            <section class="notes-section">
+
+                <h2>📝 My Notes</h2>
+
+                <p>Write down your ideas, reminders, and important thoughts.</p>
+
+                <textarea
+                    id="notesInput"
+                    placeholder="Write your notes here..."
+                    rows="5"
+                ></textarea>
+
+                <button id="saveNotesBtn">Save Notes</button>
+
+                <p id="notesStatus"></p>
+
+            </section>
+
+            <!-- Weekly Progress -->
+            <section class="progress-section">
+
+                <h2>📊 Weekly Progress</h2>
+
+                <p>Keep track of your daily productivity.</p>
+
+                <div class="progress-stats">
+
+                    <div class="progress-card">
+                        <h3 id="weeklyTasks">0</h3>
+                        <p>Tasks Completed</p>
+                    </div>
+
+                    <div class="progress-card">
+                        <h3 id="weeklyHabits">0</h3>
+                        <p>Habits Completed</p>
+                    </div>
+
+                    <div class="progress-card">
+                        <h3 id="weeklyFocus">0</h3>
+                        <p>Focus Sessions</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Daily Motivation -->
+            <section class="motivation-section">
+
+                <h2>✨ Daily Motivation</h2>
+
+                <blockquote id="motivationQuote">
+                    "Success doesn't come from what you do occasionally.
+                    It comes from what you do consistently."
+                </blockquote>
+
+                <p>Believe in yourself. Your progress starts with one small step.</p>
+
+                <button id="newQuoteBtn">New Motivation</button>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️ to build better habits and beat procrastination.</p>
+            <p>© 2026 FocusMate | Stay Focused. Stay Consistent.</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
